@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@900&display=swap");
+h1 {
+  padding-top: .5rem;
+  height: 0;
+  font-family: "Playfair Display";
+  font-size: 5rem;
+  position: relative;
+  top: -6rem;
+  opacity: .60; }
+
+span.css {
+  transform: rotate(-30deg);
+  position: absolute;
+  right: 58rem;
+  top: 5rem; }
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  background: #f0c8c2;
+  color: #90071b; }
+
+body {
+  background: #f0c8c2;
+  font-family: "Montserrat", sans-serif; }
+
+.page-wrapper {
+  background: #90071b;
+  width: 70%;
+  height: 75%;
+  margin: 0 auto;
+  border-radius: 0 4rem 0 4rem; }
+
+#zen-summary {
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  transition: 2s ease;
+  animation: sweepup 1s linear;
+  overflow: hidden; }
+
+@keyframes sweepup {
+  0% {
+    transform: translate(0, 50%); }
+  100% {
+    transform: translate(0, 0); } }
+
+/*# sourceMappingURL=styles.css.map */
