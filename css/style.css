@@ -1,0 +1,63 @@
+/* Font Imports - Montserrat & Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Playfair+Display:wght@400;900&display=swap");
+/* Variables, Atoms, Molecules, and Organisms Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@900&display=swap");
+/* HTML, Body, Page-Wrapper */
+body {
+  background: #f0c8c2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-wrapper {
+  background: #90071b;
+  width: 70%;
+  height: 75%;
+  margin: 0 auto;
+  border-radius: 0 4rem 0 4rem;
+}
+
+/* Font Properties */
+h1 {
+  padding-top: 0.5rem;
+  height: 0;
+  font-family: "Playfair Display";
+  font-size: 5rem;
+  position: relative;
+  top: -6rem;
+  opacity: 0.6;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  background: #f0c8c2;
+  color: #90071b;
+}
+
+/* Page Title */
+span.css {
+  transform: rotate(-30deg);
+  position: absolute;
+  right: 58rem;
+  top: 5rem;
+}
+
+/* Page Sections */
+#zen-summary {
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  transition: 2s ease;
+  animation: sweepup 1s linear;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes sweepup {
+  0% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */
