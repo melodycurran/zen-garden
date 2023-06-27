@@ -1,5 +1,23 @@
+/* Font Imports - Montserrat & Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Playfair+Display:wght@400;900&display=swap');
+/* Variables, Atoms, Molecules, and Organisms Imports */
 @import 'variables';
 
+/* HTML, Body, Page-Wrapper */
+body {
+    background: $background-color;
+    font-family: $font-body;
+}
+
+.page-wrapper {
+    background: $accent1;
+    width: 70%;
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 0 4rem 0 4rem; 
+}
+
+/* Font Properties */
 h1 {
     padding-top: .5rem;
     height: 0;
@@ -10,13 +28,6 @@ h1 {
     opacity: .60;
 }
 
-span.css {
-    transform: rotate(-30deg);
-    position: absolute;
-    right: 58rem;
-    top: 5rem;
-}
-
 h2 {
     padding: 1rem;
     text-align: center;
@@ -24,19 +35,16 @@ h2 {
     color: $accent1;
 }
 
-body {
-    background: $background-color;
-    font-family: $font-body;
-}
-.page-wrapper {
-    background: $accent1;
-    width: 70%;
-    height: 75%;
-    margin: 0 auto;
-    border-radius: 0 4rem 0 4rem; 
+/* Page Title */
+span.css {
+    transform: rotate(-30deg);
+    position: absolute;
+    right: 58rem;
+    top: 5rem;
 }
 
-#zen-summary {
+/* Page Sections */
+#zen-summary { // 1st Paragraph
     text-align: center;
     padding: 1.5rem;
     color: white;
@@ -45,6 +53,7 @@ body {
     overflow: hidden;
 }
 
+/* Animations */
 @keyframes sweepup {
     0% {
         transform: translate(0,50%);
