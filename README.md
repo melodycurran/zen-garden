@@ -11,7 +11,6 @@ Jordan Eldredge
 ```
 
 <!--The following text is meant as a quick guide for the Zen Garden HTML layout-->
-<!--Please do not delete the [U+200E] placeholders as they represent an empty character -->
 Zen Garden HTML Structure Reference
 ```
 Body:
