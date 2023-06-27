@@ -10,7 +10,8 @@ _ Ernest Nwabuko
 _ Jordan Eldredge
 ```
 
-<!--The following text is meant as a quick reference guide for the Zen Garden HTML layout-->
+<!--The following text is meant as a quick guide for the Zen Garden HTML layout-->
+Zen Garden HTML Structure Reference
 ```
 Div .page-wrapper
 _ SECTION 1: .intro | #zen-intro
