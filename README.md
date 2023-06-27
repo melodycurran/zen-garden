@@ -3,10 +3,12 @@ WDD 331R: Advanced CSS - Zen Garden Project
 
 <!--List of Team Members -->
 Group 4 Members:
+```
 _ Melody Tolentino
 _ Gavin Cannon
 _ Ernest Nwabuko
 _ Jordan Eldredge
+```
 
 <!--The following text is meant as a quick reference guide for the Zen Garden HTML layout-->
 ```
