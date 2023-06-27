@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Playfair+Display:wght@400;900&display=swap');
 
-$background-color: #f0c8c2;
-$font-color-dark: black;
-$font-color-white: #f7e6f8;
-$accent1: #90071b;
-$accent2: #f0c8c2;
-$font-body: 'Montserrat', sans-serif;
-$headline: 'Playfair Display';
+$font-header: 'Playfair Display', georgia, serif;
+$font-paragraph: 'Montserrat', arial, sans-serif;
+
+$font-dark: #000;
+$font-light: #fff;
+$primary: #f0c8c2;
+$secondary: #90071b;
+$accent1: #F7E6F8;
+
+$dark: #000;
+$light: #fff;
+
+$shadow: #00000050;
+$box-shadow: 0px 2px 8px 2px #00000050;

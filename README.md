@@ -28,7 +28,8 @@ Body:
 ‎  ‒→ Div: .explanation | #zen-explanation
 ‎ ‎ ‒→ Div: .participation | #zen-participation
 ‎ ‎ ‒→ Div: .benefits | #zen-benefits
-‎  ‒→ Div: .requirements | #zen-requirements
+‎ ‎ ‒→ Div: .requirements | #zen-requirements
+‎ ‎ ‒→ footer
 
 ‎ ‒→ ASIDE:  .sidebar
 ‎ ‎ ‒→ Div: .wrapper
