@@ -4,33 +4,43 @@ WDD 331R: Advanced CSS - Zen Garden Project
 <!--List of Team Members -->
 Group 4 Members:
 ```
-Melody Tolentino
-Gavin Cannon
-Ernest Nwabuko
-Jordan Eldredge
+Melody Tolentino | Gavin Cannon | Ernest Nwabuko | Jordan Eldredge
 ```
 <!--Team Members' Assignment-->
 Team Members' Assignment
 ```
 Jordan: Animation
 Melody: SVG
-Gavin: Layout (Grid/Flex)
-Ernest: Touch ups, formatting, hover-effects, spacing, fonts, remove bullet points, main font formatting, any smaller scale touch ups
+Gavin: Page & Div Layout (Grid/Flex)
+Ernest: Div Formatting and Small Scale Touch-Ups (padding, fonts, remove bullet points, hover effects, etc.)
+
+Anyone/Everyone: Divide code into atomic principles.
+*** You are encouraged to ask your team for help whenever you need! ***
 ```
-Anyone: Divide the code according to atomic principles. And review the code if we employed the SCSS concepts like Mixins, nesting, etc.
-You're encouraged to ask for help if there will be issues.
-```
-<!--Reminder-->
+
 Reminder
 ```
 We need to meet again after next week to record the video which is 2-3 minutes long.
+
+Team Video Deadline: July 15th
+Zen Garden Deadline: July 19th
 ```
-<!--Deadline-->
-Deadline
+
+TO DO LIST
 ```
-For the video : July 15th
-For the Zen Garden : July 19th
+- [x] Set up Repository.
+- [ ] Create live server for Repository.
+- [ ] Establish the main layout for the Zen Garden website.
+- [ ] Adjust spacing between Divs to improve user experience.
+- [ ] Find ways to incorporate SVG into main layout.
+- [ ] Find ways to incorporate animations into main layout.
+- [ ] Rework individual Div layouts, Touch up spacing within Divs.
+- [ ] Divide Code to Atomic Principles (Atoms, Molecules, Organisms)
+
+- [ ] Final Website uses SCSS concepts (Nestings, Mixins, Variables)
+- [ ] Final Website uses Grid, Flexbox, Animations, SVGS, and concepts from each lesson.
 ```
+
 <!--The following text is meant as a quick guide for the Zen Garden HTML layout-->
 Zen Garden HTML Structure Reference
 ```
