@@ -8,6 +8,9 @@ h1 {
   top: -6rem;
   opacity: .60; }
 
+h1:before {
+  content: url(#zen-logo); }
+
 span.css {
   transform: rotate(-30deg);
   position: absolute;
@@ -44,5 +47,9 @@ body {
     transform: translate(0, 50%); }
   100% {
     transform: translate(0, 0); } }
+.petal {
+  fill: #90071b;
+  stroke: none;
+  opacity: .25; }
 
 /*# sourceMappingURL=styles.css.map */

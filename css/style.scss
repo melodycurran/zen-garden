@@ -10,6 +10,10 @@ h1 {
     opacity: .60;
 }
 
+h1:before {
+    content: url(#zen-logo);
+}
+
 span.css {
     transform: rotate(-30deg);
     position: absolute;
@@ -52,4 +56,11 @@ body {
     100% {
         transform: translate(0,0);
     }
+}
+
+//SVG design
+.petal {
+    fill: #90071b;
+    stroke: none;
+    opacity: .25;
 }
