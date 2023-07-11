@@ -29,7 +29,7 @@ Zen Garden Deadline: July 19th
 TO DO LIST
 ```
 - [x] Set up Repository.
-- [ ] Create live server for Repository.
+- [x] Create live server for Repository.
 - [ ] Establish the main layout for the Zen Garden website.
 - [ ] Adjust spacing between Divs to improve user experience.
 - [ ] Find ways to incorporate SVG into main layout.
