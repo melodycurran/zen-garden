@@ -39,11 +39,12 @@ h1 {
     transform: rotate(-90deg);
 
     &:before {
-        content: url('/zen-logo.svg');
+        content: url('https://melodycurran.github.io/zen-garden/zen-logo.svg');
         position: absolute;
         right: -140px;
         top: -40px;
         transform: rotate(90deg);
+        overflow: visible;
     }
 }
 
@@ -68,7 +69,7 @@ ul li {
 }
 
 /* Page Header */
-header, {
+header {
     &:hover, .page-wrapper:hover, h2:hover {
         border-radius: 0;
         background-color: $accent1;

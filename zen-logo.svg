@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
 <path class="petal" d="M100 100 C 20 150 20 50 100 100" fill="#f0c8c2" stroke="none" opacity=".50"/>
 <path class="petal" d="M100 100 C 75 20 0 90 100 100" fill="#f0c8c2" stroke="none" opacity=".50"/>
 <path class="petal" d="M100 100 C 120 0 30 50 100 100" fill="#f0c8c2" stroke="none" opacity=".50"/>
