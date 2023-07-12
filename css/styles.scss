@@ -49,6 +49,7 @@ h1 {
 
 h2 {
     font-size: 3em;
+    border-radius: 0 4rem 0 0;
 }
 
 h3 {
@@ -67,8 +68,9 @@ ul li {
 }
 
 /* Page Header */
-header {
-    &:hover {
+header, {
+    &:hover, .page-wrapper:hover, h2:hover {
+        border-radius: 0;
         background-color: $accent1;
         box-shadow: $box-shadow;
         transition: 1s ease-in-out;
