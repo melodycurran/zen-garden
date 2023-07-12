@@ -32,7 +32,7 @@ TO DO LIST
 - [x] Create live server for Repository.
 - [ ] Establish the main layout for the Zen Garden website.
 - [ ] Adjust spacing between Divs to improve user experience.
-- [ ] Find ways to incorporate SVG into main layout.
+- [x] Find ways to incorporate SVG into main layout.
 - [ ] Find ways to incorporate animations into main layout.
 - [ ] Rework individual Div layouts, Touch up spacing within Divs.
 - [ ] Divide Code to Atomic Principles (Atoms, Molecules, Organisms)
