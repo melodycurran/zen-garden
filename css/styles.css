@@ -32,14 +32,16 @@ h1 {
   opacity: .75;
   transform: rotate(-90deg); }
   h1:before {
-    content: url("/zen-logo.svg");
+    content: url("https://melodycurran.github.io/zen-garden/zen-logo.svg");
     position: absolute;
     right: -140px;
     top: -40px;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    overflow: visible; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  border-radius: 0 4rem 0 0; }
 
 h3 {
   font-size: 1.8em; }
@@ -54,7 +56,8 @@ ul li {
   margin-bottom: 8px; }
 
 /* Page Header */
-header:hover {
+header:hover, header .page-wrapper:hover, header h2:hover {
+  border-radius: 0;
   background-color: #F7E6F8;
   box-shadow: 0px 2px 8px 2px #00000050;
   transition: 1s ease-in-out; }
