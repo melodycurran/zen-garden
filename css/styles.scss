@@ -118,6 +118,10 @@ header {
         background-color: $accent1;
         box-shadow: $box-shadow;
         transition: 1s ease-in;
+        background-image: url('https://melodycurran.github.io/zen-garden/zen-logo.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 30%;
     }
 }
 

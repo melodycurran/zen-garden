@@ -74,7 +74,11 @@ h2 {
   .intro div:hover, .main div:hover, .sidebar .wrapper div:hover, footer:hover {
     background-color: #F7E6F8;
     box-shadow: 0px 2px 8px 2px #00000050;
-    transition: 1s ease-in; }
+    transition: 1s ease-in;
+    background-image: url("https://melodycurran.github.io/zen-garden/zen-logo.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 30%; }
 
 #zen-summary {
   text-align: center;
