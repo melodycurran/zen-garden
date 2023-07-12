@@ -25,13 +25,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
+
 h1 {
     font-size: 3em;
-    padding-top: .5rem;
+    padding: 1.5rem;
     height: 0;
     font-size: 5rem;
-    position: relative;
-    top: -6rem;
+    position: absolute;
+    left: -15rem;
+    top: 26rem;
+    line-height: 1em;
+    opacity: .75;
+    transform: rotate(-90deg);
+
+    &:before {
+        content: url('/zen-logo.svg');
+        position: absolute;
+        right: -140px;
+        top: -40px;
+        transform: rotate(90deg);
+    }
 }
 
 h2 {
@@ -61,26 +74,30 @@ header {
         transition: 1s ease-in-out;
     }
 
-    h1 { // Optional Header Styling
-        visibility: hidden;
-        text-align: center;
-        line-height: 1em;
-        &:before {
-            content: "Zen Garden";
-            visibility: visible;
-            display: block;
-            opacity: 0.60;
-        }
-        &:after {
-            content: "CSS";
-            visibility: visible;
-            display: inline;
-            position: absolute;
-            top: 0.7em;
-            left: 75%;
-            transform: rotate(-30deg);
-            opacity: 0.60;
-        }
+    // h1 { // Optional Header Styling
+    //     // visibility: hidden;
+    //     // text-align: center;
+    //     // line-height: 1em;
+
+    //     // &:before {
+    //     //     content: "Zen Garden";
+    //     //     visibility: visible;
+    //     //     display: block;
+    //     //     opacity: 0.60;
+    //     }
+
+        
+
+        // &:after {
+        //     content: "CSS";
+        //     visibility: visible;
+        //     display: inline;
+        //     position: absolute;
+        //     top: 0.7em;
+        //     left: 75%;
+        //     transform: rotate(-30deg);
+        //     opacity: 0.60;
+        // }
     }
     
     h2 {
@@ -89,7 +106,7 @@ header {
         background-color: $light;
         color: $secondary;
     }
-}
+
 
 /* Page Sections */
 .intro div, .main div, .sidebar .wrapper div, footer {
@@ -135,3 +152,6 @@ footer {
         transform: translate(0,0);
     }
 }
+
+
+
