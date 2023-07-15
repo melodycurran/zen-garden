@@ -6,7 +6,8 @@
 body {
   margin: 0;
   padding: 20px 10px;
-  background-color: #90071b;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(144, 7, 7) 37%, rgb(144, 7, 27) 77%);
 }
 
 .page-wrapper {
@@ -18,7 +19,12 @@ body {
 }
 
 /* Font Properties */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", georgia, serif;
   font-weight: 900;
 }
@@ -40,7 +46,9 @@ h3 {
   font-size: 1.8em;
 }
 
-p, nav, a {
+p,
+nav,
+a {
   font-family: "Montserrat", arial, sans-serif;
   font-weight: 400;
   line-height: 1.4em;
@@ -86,13 +94,27 @@ header h2 {
 }
 
 /* Page Sections */
-.intro div, .main div, .sidebar .wrapper div, footer {
+.intro div,
+.main div,
+.sidebar .wrapper div,
+footer {
   padding: 1.5rem;
 }
-.intro div:hover, .main div:hover, .sidebar .wrapper div:hover, footer:hover {
+.intro div:hover,
+.main div:hover,
+.sidebar .wrapper div:hover,
+footer:hover {
   background-color: #F7E6F8;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.3137254902);
   transition: 1s ease-in;
+}
+
+header {
+  border-top-right-radius: 4em;
+}
+
+div {
+  text-align: center;
 }
 
 #zen-summary {
@@ -108,6 +130,15 @@ header h2 {
 #zen-summary:hover {
   background-color: #F7E6F8;
   color: #000;
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.3137254902);
+  transition: 1s ease-in;
+}
+
+.zen-resources {
+  border-bottom-left-radius: 4em;
+}
+.zen-resources:hover {
+  background-color: #F7E6F8;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.3137254902);
   transition: 1s ease-in;
 }
@@ -128,4 +159,185 @@ footer {
   100% {
     transform: translate(0, 0);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+.preamble::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position-y: 50%;
+  margin: auto;
+}
+
+.explanation::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position-y: 50%;
+  margin: auto;
+}
+
+.participation::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position-y: 50%;
+  margin: auto;
+}
+
+.benefits {
+  color: white;
+  position: relative;
+  background-image: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background-position: 50% 50%;
+  fill-opacity: 0;
+}
+.benefits h3 {
+  font-size: 4rem;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(94, 5, 18, 0) 99%, rgba(144, 7, 27, 0) 100%);
+}
+.benefits p {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+}
+.benefits p:hover {
+  opacity: 100;
+  transition: 1s ease-in;
+  border-radius: 3px;
+  background: rgb(144, 7, 27);
+  background: linear-gradient(356deg, rgba(144, 7, 27, 0) 0%, rgba(94, 5, 18, 0) 62%, rgb(0, 0, 0) 100%);
+}
+.benefits:hover {
+  background-color: black;
+  transition: 1s ease-in;
+}
+
+.requirements::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/pink-spiked-flower.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position-y: 50%;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .intro {
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header[role=banner] {
+    grid-column: 1/span 3;
+  }
+  .summary {
+    grid-column: 1/span 3;
+  }
+  .preamble {
+    grid-column: 1/span 3;
+  }
+  .main {
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .explanation {
+    grid-column: 1/2;
+  }
+  .participation {
+    grid-column: 2/3;
+  }
+  .benefits {
+    grid-column: 1/2;
+  }
+  footer {
+    grid-column: 1/span 3;
+  }
+  .sidebar {
+    grid-column: 1/span 3;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .design-selection {
+    text-align: left;
+    grid-column: 1/span 3;
+  }
+  .design-selection ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 0;
+  }
+  .design-selection ul li {
+    padding-bottom: 20px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .design-archives {
+    grid-row: 2/3;
+    text-align: left;
+    border-bottom-left-radius: 4em;
+  }
+  .design-archives:hover {
+    background-color: #F7E6F8;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.3137254902);
+    transition: 1s ease-in;
+  }
+  .design-archives ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .design-archives ul li {
+    padding-bottom: 20px;
+  }
+  .zen-resources {
+    text-align: left;
+    grid-column: span 2;
+    grid-row: 2/3;
+    display: grid;
+    border-bottom-left-radius: 0;
+  }
+  .zen-resources ul {
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+  }
+  .zen-resources ul li {
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
