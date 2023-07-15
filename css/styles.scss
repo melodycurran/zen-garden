@@ -58,8 +58,13 @@
     }
     /* Lists */
     
+    ul {
+        list-style: none;
+    }
+    
     ul li {
         margin-bottom: 8px;
+        padding: 5px;
     }
     /* Page Header */
     
@@ -166,11 +171,11 @@
     
     // Images
     .preamble::before {
-        @include flowerImages("/images/pink-spiked-flower.webp")
+        @include flowerImages("/images/orange-spiked-flower.webp")
     }
     
     .explanation::before {
-        @include flowerImages("/images/pink-spiked-flower.webp")
+        @include flowerImages("/images/pink-lily.webp")
     }
     
     .participation::before {
@@ -182,7 +187,7 @@
         position: relative;
         background-image: url("/images/pink-spiked-flower.webp");
         background-size: cover;
-        background: url("/images/pink-spiked-flower.webp");
+        background: url("/images/yellow-spiked-flower.webp");
         background-size: cover;
         background-position: 50% 50%;
         fill-opacity: 0;
@@ -195,7 +200,7 @@
             opacity: 0;
             position: relative;
             width: 100%;
-            height: 80%;
+            height: 75%;
             padding: 5px;
             &:hover {
                 opacity: 100;
@@ -212,7 +217,8 @@
     }
     
     .requirements::before {
-        @include flowerImages("/images/pink-spiked-flower.webp")
+        @include flowerImages("/images/purple.webp");
+        background-position-x: 35%;
     }
     
     // Page Layout

@@ -55,8 +55,13 @@ a {
 }
 
 /* Lists */
+ul {
+  list-style: none;
+}
+
 ul li {
   margin-bottom: 8px;
+  padding: 5px;
 }
 
 /* Page Header */
@@ -165,7 +170,7 @@ footer {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/pink-spiked-flower.webp");
+  background-image: url("/images/orange-spiked-flower.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -178,7 +183,7 @@ footer {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/pink-spiked-flower.webp");
+  background-image: url("/images/pink-lily.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -204,7 +209,7 @@ footer {
   position: relative;
   background-image: url("/images/pink-spiked-flower.webp");
   background-size: cover;
-  background: url("/images/pink-spiked-flower.webp");
+  background: url("/images/yellow-spiked-flower.webp");
   background-size: cover;
   background-position: 50% 50%;
   fill-opacity: 0;
@@ -218,7 +223,7 @@ footer {
   opacity: 0;
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 75%;
   padding: 5px;
 }
 .benefits p:hover {
@@ -238,12 +243,13 @@ footer {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/pink-spiked-flower.webp");
+  background-image: url("/images/purple.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
   background-position-y: 50%;
   margin: auto;
+  background-position-x: 35%;
 }
 
 @media screen and (min-width: 800px) {
