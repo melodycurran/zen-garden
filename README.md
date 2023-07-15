@@ -33,15 +33,16 @@ TO DO LIST
 ```
 - [x] Set up Repository.
 - [x] Create live server for Repository.
-- [ ] Establish the main layout for the Zen Garden website.
-- [ ] Adjust spacing between Divs to improve user experience.
+- [x] Establish the main layout for the Zen Garden website.
 - [x] Find ways to incorporate SVG into main layout.
 - [ ] Find ways to incorporate animations into main layout.
-- [ ] Rework individual Div layouts, Touch up spacing within Divs.
-- [ ] Divide Code to Atomic Principles (Atoms, Molecules, Organisms)
-
-- [ ] Final Website uses SCSS concepts (Nestings, Mixins, Variables)
-- [ ] Final Website uses Grid, Flexbox, Animations, SVGS, and concepts from each lesson.
+- [ ] Touch up spacing within Divs.
+- [x] Adjust font sizes for each viewport.
+- [ ] Update link hover and click effects.
+- [ ] Add ".extra" elements using CSS/SCSS.
+- [ ] Organize Code into Atomic Principles (Atoms, Molecules, Organisms)
+- [x] Final Website uses SCSS concepts (Nestings, Mixins, Variables)
+- [x] Final Website uses Grid, Flexbox, Animations, SVGS, and concepts from each lesson.
 ```
 
 <!--The following text is meant as a quick guide for the Zen Garden HTML layout-->
