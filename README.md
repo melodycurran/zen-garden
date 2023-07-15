@@ -1,10 +1,13 @@
 # zengarden
 WDD 331R: Advanced CSS - Zen Garden Project
 
+Our Zen Garden Link:
+https://melodycurran.github.io/zen-garden/
+
 <!--List of Team Members -->
 Group 4 Members:
 ```
-Melody Tolentino | Gavin Cannon | Ernest Nwabuko | Jordan Eldredge
+Melody Curran | Gavin Cannon | Ernest Nwabuko | Jordan Eldredge
 ```
 <!--Team Members' Assignment-->
 Team Members' Assignment
@@ -29,10 +32,10 @@ Zen Garden Deadline: July 19th
 TO DO LIST
 ```
 - [x] Set up Repository.
-- [ ] Create live server for Repository.
+- [x] Create live server for Repository.
 - [ ] Establish the main layout for the Zen Garden website.
 - [ ] Adjust spacing between Divs to improve user experience.
-- [ ] Find ways to incorporate SVG into main layout.
+- [x] Find ways to incorporate SVG into main layout.
 - [ ] Find ways to incorporate animations into main layout.
 - [ ] Rework individual Div layouts, Touch up spacing within Divs.
 - [ ] Divide Code to Atomic Principles (Atoms, Molecules, Organisms)

@@ -1,3 +1,4 @@
+
     /* IMPORTANT: Please be sure to edit the .SCSS file instead of the .CSS file so your changes don't get overridden. */
     /* Please do not make changes to the HTML file. */
     /* Variables (Fonts, Colors, Properties), Atoms, Molecules, and Organisms Imports */
@@ -102,6 +103,109 @@
             background-color: $light;
             color: $secondary;
         }
+
+/* OLD CODE:
+@import 'variables';
+
+/* HTML, Body, Page-Wrapper */
+body {
+    margin: 0;
+    padding: 20px 10px;
+    background-color: $secondary;
+}
+
+.page-wrapper {
+    width: 70%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    border-radius: 0 4rem 0 4rem;
+    background-color: $primary;
+}
+
+/* Font Properties */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+    font-weight: 900;
+}
+
+
+h1 {
+    font-size: 3em;
+    padding: 1.5rem;
+    height: 0;
+    font-size: 5rem;
+    position: absolute;
+    left: -15rem;
+    top: 26rem;
+    line-height: 1em;
+    opacity: .75;
+    transform: rotate(-90deg);
+
+    &:before {
+        content: url('https://melodycurran.github.io/zen-garden/zen-logo.svg');
+        position: absolute;
+        right: -140px;
+        top: -40px;
+        transform: rotate(90deg);
+        overflow: visible;
+    }
+}
+
+h2 {
+    font-size: 3em;
+    border-radius: 0 4rem 0 0;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p, nav, a {
+    font-family: $font-paragraph;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Lists */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Page Header */
+header {
+    &:hover, .page-wrapper:hover, h2:hover {
+        border-radius: 0;
+        background-color: $accent1;
+        box-shadow: $box-shadow;
+        transition: 1s ease-in-out;
+    }
+
+    // h1 { // Optional Header Styling
+    //     // visibility: hidden;
+    //     // text-align: center;
+    //     // line-height: 1em;
+
+    //     // &:before {
+    //     //     content: "Zen Garden";
+    //     //     visibility: visible;
+    //     //     display: block;
+    //     //     opacity: 0.60;
+    //     }
+
+        
+
+        // &:after {
+        //     content: "CSS";
+        //     visibility: visible;
+        //     display: inline;
+        //     position: absolute;
+        //     top: 0.7em;
+        //     left: 75%;
+        //     transform: rotate(-30deg);
+        //     opacity: 0.60;
+        // }
+*/
+  
     }
     /* Page Sections */
     
@@ -123,8 +227,24 @@
     
     div {
         text-align: center;
+        background-color: $light;
+        color: $secondary;
     }
-    
+
+/* OLD CODE:
+.intro div, .main div, .sidebar .wrapper div, footer {
+    padding: 1.5rem;
+    &:hover {
+        background-color: $accent1;
+        box-shadow: $box-shadow;
+        transition: 1s ease-in;
+        background-image: url('https://melodycurran.github.io/zen-garden/zen-logo.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 30%;
+    }
+    */
+      
     #zen-summary {
         text-align: center;
         margin: 1rem;
@@ -368,3 +488,22 @@
         //     grid-area: resources;
         // }
     }
+/* OLD CODE 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+}
+*/
+      
+/* Animations */
+@keyframes sweepup {
+    0% {
+        transform: translate(0,50%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
