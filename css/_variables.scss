@@ -1,19 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&family=Playfair+Display:wght@400;900&display=swap');
-$font-header: 'Playfair Display',
-georgia,
-serif;
-$font-paragraph: 'Montserrat',
-arial,
-sans-serif;
-$font-dark: #000;
-$font-light: #fff;
-$primary: #f0c8c2;
-$secondary: #90071b;
-$accent1: #F7E6F8;
-$dark: #000;
-$light: #fff;
-$shadow: #00000050;
-$box-shadow: 0px 2px 8px 2px #00000050;
+
+$font-header: 'Playfair Display', georgia, serif;
+$font-paragraph: 'Montserrat', arial, sans-serif;
+
+$view-small: 20em; // 320px+
+$view-medium-alt: 32.5em; // 520px+
+$view-medium: 50em; // 800px+
+$view-large: 75em; // 1200px+
+
+:root {
+/* 'Fluid' Font Sizes */
+--fluid-par-min: 0.6rem;
+--fluid-par-ideal: 0.8vw;
+--fluid-par-max: 1.4rem;
+
+--fluid-h3-min: 1.8rem;
+--fluid-h3-ideal: 2vw;
+--fluid-h3-max: 2rem;
+
+--fluid-h3-benefits-min: 3.6rem;
+--fluid-h3-benefits-ideal: 3vw;
+--fluid-h3-benefits-max: 6rem;
+
+--fluid-h2-min: 3rem;
+--fluid-h2-ideal: 8vw;
+--fluid-h2-max: 9rem;
+
+/* Colors */
+--primary: #90071b;
+--secondary: #f0c8c2;
+--accent1: #F7E6F8;
+--accent2: #347b2c;
+--dark: #000;
+--light: #fff;
+
+--h1-color: var(--light);
+--h2-color: var(--light);
+--h3-color: var(--primary);
+--benefits-h3: var(--light);
+--benefits-par: var(--light);
+
+--link-color: var(--dark);
+--link-hover: var(--dark);
+--link-active: var(--dark);
+--link-visisted: var(--dark);
+
+/* Variables */
+--box-shadow: 2px 2px 8px 2px #00000050;
+}
+
+@mixin nav-rows {
+    @media (min-width: $view-small) {grid-template-rows: 1fr 1fr 1fr;} //320px+
+    @media (min-width: $view-medium) {grid-template-rows: 1fr 1fr 1fr;} // 800px+
+    @media (min-width: $view-large) {grid-template-rows: 1fr 1fr 1fr;} // 1200px+
+}
+
 @mixin flowerImages($image-url) {
     content: '';
     display: block;
