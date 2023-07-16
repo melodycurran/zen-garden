@@ -35,7 +35,7 @@ TO DO LIST
 - [x] Create live server for Repository.
 - [x] Establish the main layout for the Zen Garden website.
 - [x] Find ways to incorporate SVG into main layout.
-- [ ] Find ways to incorporate animations into main layout.
+- [x] Find ways to incorporate animations into main layout.
 - [ ] Touch up spacing within Divs.
 - [x] Adjust font sizes for each viewport.
 - [ ] Update link hover and click effects.
@@ -49,25 +49,25 @@ TO DO LIST
 Zen Garden HTML Structure Reference
 ```
 Body:
-→‎ Div: .page-wrapper
+→ Div: .page-wrapper
 
-‎ ‒→ SECTION: .intro | #zen-intro
-‎ ‎ ‒→ Header
-‎ ‎ ‎ ┖‒→ h1
-‎ ‎ ‎ ┖‒→ h2
-‎  ‒→ Div: .summary | #zen-summary
-‎‎  ‒→ Div: .preamble | #zen-preamble
+ ‒→ SECTION: .intro | #zen-intro
+    ‒→ Header
+        ┖‒→ h1
+        ┖‒→ h2
+    ‒→ Div: .summary | #zen-summary
+    ‒→ Div: .preamble | #zen-preamble
 
-‎ ‒→ DIV: .main .supporting | #zen-supporting
-‎  ‒→ Div: .explanation | #zen-explanation
-‎ ‎ ‒→ Div: .participation | #zen-participation
-‎ ‎ ‒→ Div: .benefits | #zen-benefits
-‎ ‎ ‒→ Div: .requirements | #zen-requirements
-‎ ‎ ‒→ footer
+ ‒→ DIV: .main .supporting | #zen-supporting
+    ‒→ Div: .explanation | #zen-explanation
+    ‒→ Div: .participation | #zen-participation
+    ‒→ Div: .benefits | #zen-benefits
+    ‒→ Div: .requirements | #zen-requirements
+    ‒→ footer
 
-‎ ‒→ ASIDE:  .sidebar
-‎ ‎ ‒→ Div: .wrapper
-‎ ‎ ‎ ┖‒→ Div: .design-selection | #design-selection
-‎ ‎ ‎ ┖‒→ Div: .design-archives | #design-archives
-‎ ‎‎  ┖‒→ Div: .zen-resources | #zen-resources
+ ‒→ ASIDE:  .sidebar
+    ‒→ Div: .wrapper
+        ┖‒→ Div: .design-selection | #design-selection
+        ┖‒→ Div: .design-archives | #design-archives
+        ┖‒→ Div: .zen-resources | #zen-resources
 ```
