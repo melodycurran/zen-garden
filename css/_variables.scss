@@ -83,3 +83,15 @@ $view-large: 75em; // 1200px+
         transform: translate(0, 0);
     }
 }
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
