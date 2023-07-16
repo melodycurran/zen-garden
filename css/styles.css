@@ -20,13 +20,13 @@
   --primary: #90071b;
   --secondary: #f0c8c2;
   --accent1: #F7E6F8;
-  --accent2: #347b2c;
+  --accent2: #3b9131;
   --dark: #000;
   --light: #fff;
   --h1-color: var(--light);
   --h2-color: var(--light);
   --h3-color: var(--primary);
-  --benefits-h3: var(--light);
+  --benefits-h3: var(--secondary);
   --benefits-par: var(--light);
   --link-color: var(--dark);
   --link-hover: var(--dark);
@@ -34,8 +34,20 @@
   --link-visisted: var(--dark);
   /* Variables */
   --box-shadow: 2px 2px 8px 2px #00000050;
+  --gradient-benefits-title: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(94, 5, 18, 0) 99%, rgba(144, 7, 27, 0) 100%);
+  --gradient-benefits-par: linear-gradient(356deg, rgba(144, 7, 27, 0) 0%, rgba(94, 5, 18, 0) 62%, rgba(0, 0, 0, 1) 100%);
 }
 
+/* Mixins */
+/* Animations */
+@keyframes sweepup {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /* ============== FOUNDATION / FUNDAMENTALS ============== */
 /* HTML, Body, Page-Wrapper */
 body {
@@ -125,6 +137,14 @@ h2 {
 h2 > abbr {
   color: var(--secondary);
 }
+h2 > abbr:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
+}
 
 h3 {
   color: var(--h3-color);
@@ -167,22 +187,13 @@ ul li {
   list-style-type: none;
 }
 
-/* ============== ANIMATIONS / IMAGES ============== */
-/* Animations */
-@keyframes sweepup {
-  0% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+/* ============== IMAGES ============== */
 .preamble::before {
   content: "";
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/orange-spiked-flower.webp");
+  background-image: url("../images/orange-spiked-flower.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -195,7 +206,7 @@ ul li {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/pink-lily.webp");
+  background-image: url("../images/pink-lily.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -208,7 +219,7 @@ ul li {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/pink-spiked-flower.webp");
+  background-image: url("../images/pink-spiked-flower.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -260,17 +271,31 @@ footer a {
   text-align: center;
   text-decoration: none;
   color: var(--light);
-  background-color: var(--primary);
-  box-shadow: var(--box-shadow);
+  background-color: var(--dark);
 }
 footer a:hover {
-  color: var(--link-active);
+  color: var(--light);
+  background-color: var(--accent2);
+  box-shadow: var(--box-shadow);
 }
 footer a:active {
-  color: var(--link-hover);
+  color: var(--dark);
 }
 footer a:visited {
   color: var(--light);
+}
+
+@media screen and (min-width: 75em) {
+  .sidebar {
+    grid-column: 1/span 3;
+  }
+}
+@media screen and (min-width: 75em) {
+  .sidebar .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 div p {
@@ -292,35 +317,36 @@ div p {
 
 .summary {
   text-align: center;
+  transition: 1s ease-in;
+  animation: sweepup 1s linear;
   background-color: var(--secondary);
   color: var(--light);
   overflow: hidden;
+}
+.summary:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
 }
 @media screen and (min-width: 75em) {
   .summary {
     grid-column: 1/span 3;
   }
 }
-.summary div {
-  background-color: var(--dark);
-}
-
-#zen-summary {
-  transition: 1s ease-in;
-  animation: sweepup 1s linear;
-  overflow: hidden;
-}
-#zen-summary:hover {
-  background-color: var(--accent1);
-  transition: 1s ease-in;
-  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo.svg");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: 30%;
-}
 
 .preamble {
   background-color: var(--light);
+}
+.preamble:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
 }
 @media screen and (min-width: 75em) {
   .preamble {
@@ -336,6 +362,14 @@ div p {
 .explanation {
   background-color: var(--secondary);
 }
+.explanation:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
+}
 @media screen and (min-width: 75em) {
   .explanation {
     grid-column: 1/2;
@@ -345,6 +379,14 @@ div p {
 .participation {
   background-color: var(--accent1);
 }
+.participation:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo2.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
+}
 @media screen and (min-width: 75em) {
   .participation {
     grid-column: 2/3;
@@ -353,9 +395,9 @@ div p {
 
 .benefits {
   position: relative;
-  background-image: url("/images/pink-spiked-flower.webp");
+  background-image: url("../images/pink-spiked-flower.webp");
   background-size: cover;
-  background: url("/images/yellow-spiked-flower.webp");
+  background: url("../images/yellow-spiked-flower.webp");
   background-size: cover;
   background-position: 50% 50%;
   fill-opacity: 0;
@@ -364,25 +406,25 @@ div p {
   text-align: center;
   font-size: clamp(var(--fluid-h3-benefits-min), var(--fluid-h3-benefits-ideal) + 1rem, var(--fluid-h3-benefits-max));
   color: var(--benefits-h3);
-  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(94, 5, 18, 0) 99%, rgba(144, 7, 27, 0) 100%);
+  background: var(--gradient-benefits-title);
 }
 .benefits p {
-  position: relative;
+  transition: 0.5s ease-out;
   width: 100%;
   height: 75%;
   padding: 5px;
   opacity: 0;
   color: var(--benefits-par);
 }
-.benefits p:hover {
-  opacity: 100;
-  transition: 1s ease-in;
-  border-radius: 3px;
-  background: linear-gradient(356deg, rgba(144, 7, 27, 0) 0%, rgba(94, 5, 18, 0) 62%, rgb(0, 0, 0) 100%);
-}
 .benefits:hover {
   background-color: black;
+  box-shadow: var(--box-shadow);
+}
+.benefits:hover > p {
   transition: 1s ease-in;
+  border-radius: 3px;
+  opacity: 100;
+  background: var(--gradient-benefits-par);
 }
 @media screen and (min-width: 75em) {
   .benefits {
@@ -393,12 +435,20 @@ div p {
 .requirements {
   background-color: var(--light);
 }
+.requirements:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
+}
 .requirements::before {
   content: "";
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url("/images/purple.webp");
+  background-image: url("../images/purple.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -419,21 +469,16 @@ div p {
   }
 }
 
-@media screen and (min-width: 75em) {
-  .sidebar {
-    grid-column: 1/span 3;
-  }
-}
-@media screen and (min-width: 75em) {
-  .sidebar .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
 .design-selection {
   background-color: var(--secondary);
+}
+.design-selection:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
 }
 @media screen and (min-width: 75em) {
   .design-selection {
@@ -454,6 +499,14 @@ div p {
 .design-archives {
   background-color: var(--light);
 }
+.design-archives:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
+}
 @media screen and (min-width: 75em) {
   .design-archives {
     grid-row: 2/3;
@@ -462,6 +515,14 @@ div p {
 
 .zen-resources {
   background-color: var(--accent1);
+}
+.zen-resources:hover {
+  transition: 3s ease-in-out;
+  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo2.svg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 30%;
+  box-shadow: var(--box-shadow);
 }
 @media screen and (min-width: 75em) {
   .zen-resources {
@@ -483,7 +544,7 @@ div p {
   grid-row: 1/2;
   width: 100%;
   height: 900px;
-  background-color: var(--accent2);
+  background-color: var(--dark);
 }
 
 .extra2 {

@@ -30,14 +30,14 @@ $view-large: 75em; // 1200px+
 --primary: #90071b;
 --secondary: #f0c8c2;
 --accent1: #F7E6F8;
---accent2: #347b2c;
+--accent2: #3b9131;
 --dark: #000;
 --light: #fff;
 
 --h1-color: var(--light);
 --h2-color: var(--light);
 --h3-color: var(--primary);
---benefits-h3: var(--light);
+--benefits-h3: var(--secondary);
 --benefits-par: var(--light);
 
 --link-color: var(--dark);
@@ -47,14 +47,11 @@ $view-large: 75em; // 1200px+
 
 /* Variables */
 --box-shadow: 2px 2px 8px 2px #00000050;
+--gradient-benefits-title: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(94, 5, 18, 0) 99%, rgba(144, 7, 27, 0) 100%);
+--gradient-benefits-par: linear-gradient(356deg, rgba(144, 7, 27, 0) 0%, rgba(94, 5, 18, 0) 62%, rgba(0, 0, 0, 1) 100%);
 }
 
-@mixin nav-rows {
-    @media (min-width: $view-small) {grid-template-rows: 1fr 1fr 1fr;} //320px+
-    @media (min-width: $view-medium) {grid-template-rows: 1fr 1fr 1fr;} // 800px+
-    @media (min-width: $view-large) {grid-template-rows: 1fr 1fr 1fr;} // 1200px+
-}
-
+/* Mixins */
 @mixin flowerImages($image-url) {
     content: '';
     display: block;
@@ -66,4 +63,23 @@ $view-large: 75em; // 1200px+
     border-radius: 50%;
     background-position-y: 50%;
     margin: auto;
+}
+
+@mixin zen-logo-background($image-url) {
+    transition: 3s ease-in-out;
+    background-image: url($image-url);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 30%;
+    box-shadow: var(--box-shadow);
+}
+
+/* Animations */
+@keyframes sweepup {
+    0% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
