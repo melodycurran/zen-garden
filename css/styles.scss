@@ -80,11 +80,9 @@ h2 { // TOP HEADER //
     display: inline;
     text-align: center;
     color: var(--h2-color);
+    animation: appear 2s ease-in;
     & > abbr {
         color: var(--secondary);
-        &:hover {
-            @include zen-logo-background('https://melodycurran.github.io/zen-garden/zen-logo1.svg');
-        }
     }
     font-size: clamp(
         var(--fluid-h2-min),

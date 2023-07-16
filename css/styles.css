@@ -48,6 +48,17 @@
     transform: translate(0, 0);
   }
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* ============== FOUNDATION / FUNDAMENTALS ============== */
 /* HTML, Body, Page-Wrapper */
 body {
@@ -132,18 +143,11 @@ h2 {
   display: inline;
   text-align: center;
   color: var(--h2-color);
+  animation: appear 2s ease-in;
   font-size: clamp(var(--fluid-h2-min), var(--fluid-h2-ideal) + 1rem, var(--fluid-h2-max));
 }
 h2 > abbr {
   color: var(--secondary);
-}
-h2 > abbr:hover {
-  transition: 3s ease-in-out;
-  background-image: url("https://melodycurran.github.io/zen-garden/zen-logo1.svg");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: 30%;
-  box-shadow: var(--box-shadow);
 }
 
 h3 {
