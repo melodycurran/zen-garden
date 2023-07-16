@@ -185,8 +185,8 @@ header[role="banner"] {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
+    justify-content: center;
+    width: 85%;
     margin: 0 auto;
     @media screen and (min-width: $view-large)  {
         grid-column: 1 / span 3;
@@ -194,7 +194,7 @@ footer {
     a {
         width: 5rem;
         padding: 20px;
-        margin: 8px 2px;
+        margin: 8px;
         text-align: center;
         text-decoration: none;
         color: var(--light);
@@ -337,7 +337,7 @@ div {
         & > p {
             transition: 1s ease-in;
             border-radius: 3px;
-            opacity: 100;
+            opacity: 100%;
             background: var(--gradient-benefits-par);
         }
     }
@@ -435,8 +435,8 @@ div {
 }
 
 .extra2 {
-    z-index: -3;
     // Bottom Floating Element
+    z-index: -3;
     display: inline;
     position: relative;
     grid-column: 1/2;
